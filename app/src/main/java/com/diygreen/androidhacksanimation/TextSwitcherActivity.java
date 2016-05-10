@@ -34,8 +34,7 @@ public class TextSwitcherActivity extends AppCompatActivity implements ViewSwitc
         mSwitcher = (TextSwitcher) findViewById(R.id.switcher);
         mTextSwitcher = (TextSwitcher) findViewById(R.id.text_switcher);
 
-        mSwitcher.setFactory(this);
-        mTextSwitcher.setFactory(this);
+        setFactory();
 
         Animation in = AnimationUtils.loadAnimation(this,
                 android.R.anim.fade_in);
@@ -54,6 +53,20 @@ public class TextSwitcherActivity extends AppCompatActivity implements ViewSwitc
         onSwitchText();
     }
 
+    private void setFactory() {
+        mSwitcher.setFactory(this);
+        mTextSwitcher.setFactory(new ViewSwitcher.ViewFactory() {
+            @Override
+            public View makeView() {
+                TextView t = new TextView(TextSwitcherActivity.this);
+                t.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL);
+                t.setTextSize(36);
+                return t;
+            }
+        });
+    }
+
+    @Override
     public View makeView() {
         TextView t = new TextView(this);
         t.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL);

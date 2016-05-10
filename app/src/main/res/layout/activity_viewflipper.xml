@@ -4,35 +4,30 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dip">
-
     <ViewFlipper
         android:id="@+id/flipper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dip"
         android:flipInterval="2000">
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="@string/animation_2_text_1"
             android:textSize="26sp" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="@string/animation_2_text_2"
             android:textSize="26sp" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="@string/animation_2_text_3"
             android:textSize="26sp" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

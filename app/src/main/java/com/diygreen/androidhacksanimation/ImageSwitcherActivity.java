@@ -45,6 +45,7 @@ public class ImageSwitcherActivity extends AppCompatActivity implements
     public void onNothingSelected(AdapterView parent) {
     }
 
+    @Override
     public View makeView() {
         ImageView i = new ImageView(this);
         i.setBackgroundColor(0xFF000000);
