@@ -18,7 +18,8 @@
         <activity android:name=".TextSwitcherActivity" />
         <activity android:name=".ImageSwitcherActivity" />
         <activity android:name=".ViewFlipperActivity" />
-        <activity android:name=".VGChildrenAnimActivity"></activity>
+        <activity android:name=".VGChildrenAnimActivity" />
+        <activity android:name=".CanvasAnimActivity"></activity>
     </application>
 
 </manifest>
