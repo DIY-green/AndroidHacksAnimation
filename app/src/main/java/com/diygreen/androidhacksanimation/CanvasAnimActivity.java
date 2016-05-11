@@ -11,9 +11,11 @@ public class CanvasAnimActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // 获取屏幕尺寸
         Display display = getWindowManager().getDefaultDisplay();
         mDrawView = new DrawView(this);
-        mDrawView.height = display.getHeight();
+        // 这里简单简单起见为状态栏和ActionBar的高度取了个固定值 200
+        mDrawView.height = display.getHeight() - 200;
         mDrawView.width = display.getWidth();
 
         setContentView(mDrawView);
