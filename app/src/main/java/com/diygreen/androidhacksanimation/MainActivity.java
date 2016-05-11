@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_test3:
                 overlay(ViewFlipperActivity.class);
                 break;
+            case R.id.btn_test4:
+                overlay(VGChildrenAnimActivity.class);
+                break;
         }
     }
 
