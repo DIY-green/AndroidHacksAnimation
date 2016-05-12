@@ -31,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_test5:
                 overlay(CanvasAnimActivity.class);
                 break;
+            case R.id.btn_test6:
+                overlay(KenBurnsActivity.class);
+                break;
         }
     }
 

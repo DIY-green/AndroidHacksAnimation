@@ -19,7 +19,8 @@
         <activity android:name=".ImageSwitcherActivity" />
         <activity android:name=".ViewFlipperActivity" />
         <activity android:name=".VGChildrenAnimActivity" />
-        <activity android:name=".CanvasAnimActivity"></activity>
+        <activity android:name=".CanvasAnimActivity" />
+        <activity android:name=".KenBurnsActivity"></activity>
     </application>
 
 </manifest>
